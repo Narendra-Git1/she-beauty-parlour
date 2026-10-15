@@ -1,41 +1,54 @@
-# She Beauty Parlour website
+# She Beauty Parlour & Fancy
 
-React + Vite + JavaScript + Tailwind CSS. This is a frontend-only website; it does not use Spring Boot or a database.
+Responsive React + Vite website for She Beauty Parlour & Fancy in Vinjamur, Andhra Pradesh.
+
+## Features
+
+- Home, Services, Gallery, About Us and Contact pages
+- Poster-inspired burgundy, blush, ivory and gold styling
+- Official grand-opening poster included at `public/grand-opening-poster.jpg`
+- Nine service categories from the supplied poster; service prices are intentionally hidden
+- WhatsApp enquiry link configured for +91 6301427005
+- Click-to-call links for +91 6301427005 and +91 8328499854
+- Map embed/search using the provided Medplus Pharmacy, Main Road, Vinjamur landmark
+- Responsive navigation, motion effects and social profile link where configured
 
 ## Run locally
 
-1. Install Node.js (LTS).
-2. Extract this folder and open it in VS Code.
-3. In the terminal, run:
+Requirements: Node.js and npm.
 
-   ```bash
-   npm install
-   npm run dev
-   ```
+```bash
+npm install
+npm run dev
+```
 
-4. Open the local URL printed by Vite, normally `http://localhost:5173`.
+## Production build
 
-## Central business information
+```bash
+npm run build
+npm run preview
+```
 
-Edit `src/data/businessInfo.js` to update the business name, opening date, contact information, address, hours, Instagram link and service list.
+Vite outputs the production site to `dist/`.
 
-- Current owner-provided phone numbers: +91 6301427005 and +91 8328499854. The first number is configured as the WhatsApp enquiry number; confirm this is the preferred WhatsApp number before publishing.
-- Current location: Vinjamur, Andhra Pradesh 524228. No street address has been provided.
-- Opening hours: 10 AM to 8 PM. Instagram and email remain unconfigured.
-- Service prices are not invented; the interface says “Contact for pricing”.
-- Sample images are temporary inspiration images and should be replaced with owner-approved photos before or soon after launch.
-- The current opening date is based on the client-provided date and should be updated if it changes.
+## Netlify
 
-## Pages
+- Build command: `npm run build`
+- Publish directory: `dist`
+- Base directory: leave blank when `package.json` is in the repository root
 
-The app includes Home, Services, Gallery, About Us and Contact. Navigation works client-side.
+Netlify is connected to GitHub. Commit and push changes to the configured branch to trigger a deployment. Check the Netlify Deploys page and confirm the latest deployment is Published.
 
-## Before publishing
+## Owner-confirmation notes
 
-- Confirm and update all business details.
-- Replace sample gallery/hero imagery with approved images where possible.
-- Verify image licensing and image loading.
-- Confirm the primary WhatsApp number and test the enquiry link on a phone.
-- Test responsive layout and links.
-- Run `npm run build` and resolve any errors.
-- Deploy the `dist` folder to a static hosting provider such as Netlify or Vercel.
+- The poster says “Grand Opening on Saturday” but does not show a calendar date, so the site does not invent a specific date.
+- Address landmark supplied: Medplus Pharmacy, opposite street, Main Road, Vinjamur, Andhra Pradesh 524228. The embedded map is a search for this landmark and should be checked against the exact shop pin before relying on it for navigation.
+- Service prices are intentionally not displayed.
+- The supplied grand-opening poster is official. Other gallery images are temporary sample inspiration images, not verified parlour work.
+- Instagram link is configured from the existing project setting. Facebook and YouTube are not linked because confirmed profile URLs were not provided.
+- Confirm the primary WhatsApp number is the preferred number before sharing widely.
+
+
+## Responsive layout
+
+The site includes responsive layouts for desktop, tablet, and mobile widths (including narrow 320–360px screens), a mobile navigation menu, fluid poster sizing, responsive service/gallery grids, and reduced-motion support. The grand-opening image in `public/grand-opening-poster.jpg` is the clean poster crop without Instagram Story controls.

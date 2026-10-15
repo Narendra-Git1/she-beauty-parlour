@@ -47,12 +47,11 @@ export default function Footer({ navigate }) {
         <div className="footer-brand">
           <div className="footer-logo">
             <Sparkles size={20} />
-            <span>She Beauty Parlour</span>
+            <span>She Beauty Parlour &amp; Fancy</span>
           </div>
 
           <p>
-            A little time for yourself, a little extra glow.
-            Your beauty, your confidence, your moment.
+            Your Beauty, Our Priority. Look good, feel good, be you.
           </p>
 
           <WhatsAppButton
@@ -133,11 +132,17 @@ export default function Footer({ navigate }) {
       </div>
 
      
+      <div className="footer-quote">
+        <Quote size={22} aria-hidden="true" />
+        <p>“Look Good. Feel Good. Be You.”</p>
+        <span>Your Beauty, Our Priority</span>
+      </div>
+
       {/* Copyright */}
       <div className="footer-bottom">
         <div className="container footer-bottom-inner">
           <span>
-            © {new Date().getFullYear()} She Beauty Parlour.
+            © {new Date().getFullYear()} She Beauty Parlour &amp; Fancy.
             All rights reserved.
           </span>
 

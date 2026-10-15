@@ -7,7 +7,7 @@ export default function ServiceCard({ service, compact = false }) {
       <div className="service-card-content">
         <div className="service-title-row"><h3>{service.name}</h3><ArrowUpRight size={18} /></div>
         <p>{service.description}</p>
-        <div className="service-card-bottom"><span className="price-note">Contact for pricing</span><WhatsAppButton message={`Hello She Beauty Parlour! I'd like to enquire about ${service.name}.`} className="text-button">Enquire <span>↗</span></WhatsAppButton></div>
+        <div className="service-card-bottom"><span className="price-note">Price on enquiry</span><WhatsAppButton message={`Hello She Beauty Parlour! I'd like to enquire about ${service.name}.`} className="text-button">Enquire <span>↗</span></WhatsAppButton></div>
       </div>
     </article>
   )

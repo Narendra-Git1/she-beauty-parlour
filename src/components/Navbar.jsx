@@ -17,7 +17,7 @@ export default function Navbar({ page, navigate }) {
       <nav className="nav-shell container">
         <button className="brand" onClick={() => go('home')} aria-label="She Beauty Parlour home">
           <span className="brand-mark">S<span>♥</span></span>
-          <span className="brand-copy"><strong>She Beauty</strong><small>PARLOUR</small></span>
+          <span className="brand-copy"><strong>She Beauty</strong><small>PARLOUR & FANCY</small></span>
         </button>
         <button className="mobile-menu" onClick={() => setOpen(!open)} aria-label={open ? 'Close menu' : 'Open menu'}>{open ? <X /> : <Menu />}</button>
         <div className={`nav-links ${open ? 'nav-links-open' : ''}`}>
