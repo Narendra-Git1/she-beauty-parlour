@@ -1,5 +1,6 @@
 import { MessageCircle } from 'lucide-react'
 import { businessInfo } from '../data/businessInfo'
+import { FaWhatsapp } from 'react-icons/fa'
 
 export function whatsappUrl(message = 'Hello She Beauty Parlour! I would like to enquire about your services.') {
   const number = (businessInfo.whatsappNumber || '').replace(/\D/g, '')
@@ -22,7 +23,7 @@ export default function WhatsAppButton({ message, children = 'Enquire on WhatsAp
       aria-disabled={!url}
       title={!url ? 'Business WhatsApp number not configured yet' : 'Enquire on WhatsApp'}
     >
-      <MessageCircle size={18} /> {children}
+      <FaWhatsapp size={34} />  {children}
     </a>
   )
 }
